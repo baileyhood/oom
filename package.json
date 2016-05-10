@@ -1,0 +1,31 @@
+{
+  "name": "oom",
+  "version": "1.0.0",
+  "description": "meditation app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baileyhood/oom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baileyhood/oom/issues"
+  },
+  "homepage": "https://github.com/baileyhood/oom#readme",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "angular-timer": "^1.3.3",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.3",
+    "node-sass": "^3.7.0"
+  },
+  "devDependencies": {
+    "humanize-duration": "^3.7.1",
+    "momentjs": "^1.1.6"
+  }
+}
