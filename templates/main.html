@@ -2,7 +2,10 @@
 <h3><timer/></h3>
 <button ng-click="startTimer()" ng-disabled="timerRunning">Start Timer</button>
 <button ng-click="stopTimer()" ng-disabled="!timerRunning">Stop Timer</button>
-
+<input type="text" ng-model ="input" name="name" value="">
+{{input}}
+<button type="submit" name="button">Submit</button>
 <h3>
-    <timer countdown="10000" interval="1000">{{countdown}}</timer>
+    <timer countdown="100" interval="1000">{{countdown}}</timer>
 </h3>
+<button class="btn" onclick="addCDSeconds('countdown-timer', 10)" type="button">Add 10 Seconds</button>
