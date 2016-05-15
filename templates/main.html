@@ -1,0 +1,8 @@
+<h1>AngularJS - Single Timer Example</h1>
+<h3><timer/></h3>
+<button ng-click="startTimer()" ng-disabled="timerRunning">Start Timer</button>
+<button ng-click="stopTimer()" ng-disabled="!timerRunning">Stop Timer</button>
+
+<h3>
+    <timer countdown="10000" interval="1000">{{countdown}}</timer>
+</h3>
