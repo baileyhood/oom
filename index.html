@@ -8,10 +8,10 @@
   </head>
   <body>
 
-    <form class="timer-form" action="index.html" method="post">
-      <input type="text" name="name" placeholder="Enter Time" value="">
-      <button type="submit" id = "submit-time-button" name="button">submit</button>
-    </form>
+
+      <!-- <input type="text" id = "time-input" name="name" placeholder="Enter Time" value=""> -->
+      <input type="text"  class="time-input" name="time" value="" id="time-input" placeholder="enter time">
+    
 
     <div class="pie degree">
       <span class="block"></span>
@@ -21,18 +21,13 @@
     <button type="button" id="stop-timer-button" name="button">stop timer</button>
     <button type="button" id="start-timer-button" name="button">start timer</button>
     <button type="button" id="resume-timer-button" name="button">resume timer</button>
-    <script src="node_modules/angular/angular.js" charset="utf-8"></script>
-    <script src="node_modules/angular-route/angular-route.js" charset="utf-8"></script>
+
 
     <!-- Angular Timer Dependencies -->
-    <script src="node_modules/angular-timer/dist/assets/js/angular-timer-bower.js" charset="utf-8"></script>
-    <script src="node_modules/angular-timer/dist/assets/js/angular-timer-all.min.js" charset="utf-8"></script>
-    <script src="node_modules/humanize-duration/humanize-duration.js" charset="utf-8"></script>
 
     <script src="node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
     <script src="timer.js" charset="utf-8"></script>
-    <script src="app.module.js" charset="utf-8"></script>
-    <script src="controllers/home.controller.js" charset="utf-8"></script>
+
   </body>
 </html>
