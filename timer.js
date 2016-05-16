@@ -1,7 +1,7 @@
 $(document).ready(function() {
-            function beginTimer() {
+  var count = parseInt($('#time').text());
+            function beginTimer(count) {
                 var totaltime = 60;
-
                 function update(percent) {
                     var deg;
                     if (percent < (totaltime / 2)) {
@@ -18,7 +18,6 @@ $(document).ready(function() {
                         );
                     }
                 }
-                var count = 0
                 myCounter = setInterval(function() {
                     count += 1;
                     $('#time').html(count);
@@ -26,6 +25,7 @@ $(document).ready(function() {
                     if (count == totaltime) clearInterval(
                         myCounter);
                 }, 1000);
+                console.log("count in begin timer", count);
             }
             $("#stop-timer-button").on("click", function() {
                 event.preventDefault();
@@ -33,10 +33,12 @@ $(document).ready(function() {
             });
             $('#start-timer-button').on('click', function() {
                 event.preventDefault();
-                beginTimer();
-                console.log(count);
+                beginTimer(count);
+                console.log();
             })
-            $('#submit-time-button').on('click', function () {
-
+            $('#resume-timer-button').on('click', function () {
+              event.preventDefault();
+              console.log('count =', count);
+              beginTimer(count);
             })
 });
