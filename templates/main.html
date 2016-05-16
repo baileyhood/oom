@@ -1,11 +1,14 @@
 <h1>AngularJS - Single Timer Example</h1>
-<h3><timer/></h3>
-<button ng-click="startTimer()" ng-disabled="timerRunning">Start Timer</button>
-<button ng-click="stopTimer()" ng-disabled="!timerRunning">Stop Timer</button>
+
 <input type="text" ng-model ="input" name="name" value="">
 {{input}}
-<button type="submit" name="button">Submit</button>
-<h3>
-    <timer countdown="100" interval="1000">{{countdown}}</timer>
+<section id="countdown-timer">
+<h3 class="counter">
+    <timer countdown="10" interval="1000" autostart="false" finish-callback="callbackTimer.finished()">{{seconds}} second{{secondsS}} </timer>
 </h3>
-<button class="btn" onclick="addCDSeconds('countdown-timer', 10)" type="button">Add 10 Seconds</button>
+<button ng-click="startTimer()">Start Timer</button>
+<button ng-click="stopTimer()" >Stop Timer</button>
+<button type="submit" onclick="addCDSeconds('countdown-timer', 10)" name="button">Submit</button>
+Timer: <span class="timer-status">{{callbackTimer.status}}</span>
+Callbacks: <span class="timer-callbacks">{{callbackTimer.callbackCount}}</span>
+</section>

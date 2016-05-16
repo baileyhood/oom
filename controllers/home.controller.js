@@ -4,7 +4,7 @@ angular
   $scope.initialLoad = function (name) {
     console.log ("hello " + name);
   }
-  $scope.initialLoad("bailey");
+  $scope.initialLoad("blah");
 
   $scope.timerRunning = true;
 
@@ -17,5 +17,8 @@ angular
       $scope.$broadcast('timer-stop');
       $scope.timerRunning = false;
   };
+  // $scope.addCDSeconds = function (data) {
+  //   console.log ("adding seconds", data)
+  // }
 
 });
