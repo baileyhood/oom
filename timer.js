@@ -1,7 +1,7 @@
 $(document).ready(function() {
-
-            function beginTimer(count) {
+            function beginTimer(countRemaining) {
                 var totaltime = $("#time-input").val() || 60;
+                $('#time').html (totaltime);
                 console.log("time", totaltime);
                 function update(percent) {
                     var deg;
@@ -19,12 +19,12 @@ $(document).ready(function() {
                         );
                     }
                 }
-                var count = totaltime;
+                var count = countRemaining || totaltime;
                 myCounter = setInterval(function() {
                     count -= 1;
                     $('#time').html(count);
                     update(count);
-                    if (count == totaltime) clearInterval(
+                    if (count == 0) clearInterval(
                         myCounter);
                 }, 1000);
             }
@@ -39,8 +39,8 @@ $(document).ready(function() {
             })
             $('#resume-timer-button').on('click', function () {
               event.preventDefault();
-              var count = parseInt($('#time').text());
-              console.log('count =', count);
-              beginTimer(count);
+              var countRemaining = parseInt($('#time').text());
+              console.log('count =', countRemaining);
+              beginTimer(countRemaining);
             })
 });
