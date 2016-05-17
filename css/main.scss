@@ -1,42 +1,57 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
-$tosca:#1fbba6;
-body{
-  font-family: 'Open Sans', sans-serif;
-  font-weight:300;
-  background:lighten($tosca,40%);
+html {
+  height: 100%;
 }
-.pie{
-    width: 250px;
-    height: 250px;
-    display: block;
-    position: relative;
-    border-radius: 50%;
-    background-color: $tosca;
-    border: 2px solid $tosca;
-    float: left;
-    margin: 2em;
-  .block{
-    position:absolute;
-    background:#fff;
-    width:230px;
-    height:230px;
-    display:block;
-    border-radius:50%;
-    top:10px;
-    left:10px;
-  }
+
+body {
+  background: rgba(45,121,196,1);
+  background: -moz-linear-gradient(top, rgba(45,121,196,1) 0%, rgba(63,170,223,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(45,121,196,1)), color-stop(100%, rgba(63,170,223,1)));
+  background: -webkit-linear-gradient(top, rgba(45,121,196,1) 0%, rgba(63,170,223,1) 100%);
+  background: -o-linear-gradient(top, rgba(45,121,196,1) 0%, rgba(63,170,223,1) 100%);
+  background: -ms-linear-gradient(top, rgba(45,121,196,1) 0%, rgba(63,170,223,1) 100%);
+  background: linear-gradient(to bottom, rgba(45,121,196,1) 0%, rgba(63,170,223,1) 100%);
+  color: #fff;
+}
+
+.main-section {
+  // position: relative;
+}
+
+.timer-container {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  height: 250px;
+}
+
+h1 {
+  font-size: 60px;
 
 }
-#time{
-  font-size:3em;
-  position:absolute;
-  top:35%;
-  left:43%;
-  color:lighten(#000,60%);
+
+.clock button{
+  font-size: 20px;
+  margin-left:10px;
+  margin-right:10px;
 }
-.degree{
-  /*90 + ( 360 * .1 )*/
-      background-image:
-        linear-gradient(90deg, transparent 50%, white 50%),
-        linear-gradient(90deg, white 50%, transparent 50%);
+
+.clock{
+  font-size:80px;
+  margin-bottom: 30px;
+}
+
+#message {
+  font-size:40px;
+}
+
+.btn-custom {
+  background-color: #213F61;
+  border-color: #cdcdcd;
+  color: #CACACA;
+}
+
+.btn-custom:hover {
+  background-color: #213F61;
+  border-color: #cdcdcd;
+  color: #FFFFFF;
 }

@@ -1,37 +1,46 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+html {
+  height: 100%; }
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  background: #b4f2ea; }
+  background: #2d79c4;
+  background: -moz-linear-gradient(top, #2d79c4 0%, #3faadf 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #2d79c4), color-stop(100%, #3faadf));
+  background: -webkit-linear-gradient(top, #2d79c4 0%, #3faadf 100%);
+  background: -o-linear-gradient(top, #2d79c4 0%, #3faadf 100%);
+  background: -ms-linear-gradient(top, #2d79c4 0%, #3faadf 100%);
+  background: linear-gradient(to bottom, #2d79c4 0%, #3faadf 100%);
+  color: #fff; }
 
-.pie {
-  width: 250px;
-  height: 250px;
-  display: block;
-  position: relative;
-  border-radius: 50%;
-  background-color: #1fbba6;
-  border: 2px solid #1fbba6;
-  float: left;
-  margin: 2em; }
-
-.pie .block {
+.timer-container {
+  margin: auto;
   position: absolute;
-  background: #fff;
-  width: 230px;
-  height: 230px;
-  display: block;
-  border-radius: 50%;
-  top: 10px;
-  left: 10px; }
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 250px; }
 
-#time {
-  font-size: 3em;
-  position: absolute;
-  top: 35%;
-  left: 43%;
-  color: #999999; }
+h1 {
+  font-size: 60px; }
 
-.degree {
-  /*90 + ( 360 * .1 )*/
-  background-image: linear-gradient(90deg, transparent 50%, white 50%), linear-gradient(90deg, white 50%, transparent 50%); }
+.clock button {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.clock {
+  font-size: 80px;
+  margin-bottom: 30px; }
+
+#message {
+  font-size: 40px; }
+
+.btn-custom {
+  background-color: #213F61;
+  border-color: #cdcdcd;
+  color: #CACACA; }
+
+.btn-custom:hover {
+  background-color: #213F61;
+  border-color: #cdcdcd;
+  color: #FFFFFF; }

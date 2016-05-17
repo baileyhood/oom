@@ -8,22 +8,27 @@
   </head>
   <body>
 
+<section class = "timer-section">
+  <div class="timer-container text-center">
+      <h1>oom meditation app</h1>
+      <div class="clock">
+      <button type="button" class="btn btn-custom" id="btn" onClick="add()"><i class="fa fa-plus"></i>+</button>
+      <span id="min"></span>:<span id="sec"></span>
+      <button type="button" class="btn btn-custom" id="btn" onClick="reduce()"><i class="fa fa-minus"></i>-</button>
+  </div>
 
-      <!-- <input type="text" id = "time-input" name="name" placeholder="Enter Time" value=""> -->
-      <input type="text"  class="time-input" name="time" value="" id="time-input" placeholder="enter time">
-    
+      <button type="button" class="btn btn-custom" id="btn" onClick="start()"><i class="fa fa-play"></i>
+      Start</button>
+      <button type="button" class="btn btn-custom" id="btn" onClick="pause()"><i class="fa fa-pause"></i>
+      Pause</button>
+      <button type="button" class="btn btn-custom" id="btn" onClick="reset()"><i class="fa fa-refresh"></i>
+      Reset</button>
+      <section class = "message-section">
+            <p id="message"></p>
+      </section>  
+  </div>
 
-    <div class="pie degree">
-      <span class="block"></span>
-      <span id="time">0</span>
-    </div>
-
-    <button type="button" id="stop-timer-button" name="button">stop timer</button>
-    <button type="button" id="start-timer-button" name="button">start timer</button>
-    <button type="button" id="resume-timer-button" name="button">resume timer</button>
-
-
-    <!-- Angular Timer Dependencies -->
+</section>
 
     <script src="node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
