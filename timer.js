@@ -1,7 +1,7 @@
 $(document).ready(function() {
             function beginTimer(countRemaining) {
                 var totaltime = $("#time-input").val() || 60;
-                $('#time').html (totaltime);
+                $('#time').html (countRemaining);
                 console.log("time", totaltime);
                 function update(percent) {
                     var deg;
