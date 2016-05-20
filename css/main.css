@@ -35,6 +35,11 @@ h1 {
 #message {
   font-size: 40px; }
 
+button {
+  background-color: none;
+  border: none;
+  background: none; }
+
 .btn-custom {
   background-color: #213F61;
   border-color: #cdcdcd;

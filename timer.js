@@ -21,11 +21,11 @@ function reduce() {
 
 function start() {
 
-    document.getElementById('message').innerHTML = ""; //no message b/c timer is still running
+    $('#message').html(""); //no message b/c timer is still running
     if (min === 0 && sec === 0) { //adding message once timer is finished
-        document.getElementById('message').innerHTML =
+        $('#message').html(
             "Your session has finished! You meditated for " + timeMeditated +
-            " minutes";
+            " minutes");
         return;
     }
     if (sec === 0) { //reducing minute count once seconds reach 0 (i.e. one minute has passed)
@@ -47,25 +47,25 @@ function reset() {
         sec = 0;
         clearTimeout(timer);
         setInHTML();
-        document.getElementById('message').innerHTML = "";
+        $('#message').html ("");
     }
     //adding text in DOM
 
 function setInHTML() {
     if (min < 10) {
-        document.getElementById('min').innerHTML = "0" + min;
+        $('#min').html("0" + min);
     } else {
-        document.getElementById('min').innerHTML = min;
+        $('#min').html(min);
     }
     if (sec < 10) {
-        document.getElementById('sec').innerHTML = "0" + sec;
+        $('#sec').html("0" + sec);
     } else {
-        document.getElementById('sec').innerHTML = sec;
+        $('#sec').html(sec);
     }
 }
 
 function getSetTime() {
-    timeMeditated = document.getElementById('min').innerHTML;
-    document.getElementById('session-length').innerHTML = timeMeditated + " minutes";
+    timeMeditated = $('#min').html();
+    $('#session-length').html(timeMeditated + " minutes");
     return timeMeditated;
 }
