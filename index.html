@@ -12,9 +12,9 @@
   <div class="timer-container text-center">
       <h1>oom meditation app</h1>
       <h2>session length</h2>
-      <button type="button"  id="btn" onClick="add()"><i class="fa fa-plus"></i>+</button>
+      <button type="button"  id="btn" onClick="timer.add()"><i class="fa fa-plus"></i>+</button>
       <span id="session-length"></span>
-      <button type="button"  id="btn" onClick="reduce()"><i class="fa fa-minus"></i>-</button>
+      <button type="button"  id="btn" onClick="timer.reduce()"><i class="fa fa-minus"></i>-</button>
       <hr style="width: 50%;">
       <div class="clock">
 
@@ -22,11 +22,11 @@
 
   </div>
 
-      <button type="button" class="btn btn-custom" id="btn" onClick="start()"><i class="fa fa-play"></i>
+      <button type="button" class="btn btn-custom" id="btn" onClick="timer.start()"><i class="fa fa-play"></i>
       Start</button>
-      <button type="button" class="btn btn-custom" id="btn" onClick="pause()"><i class="fa fa-pause"></i>
+      <button type="button" class="btn btn-custom" id="btn" onClick="timer.pause()"><i class="fa fa-pause"></i>
       Pause</button>
-      <button type="button" class="btn btn-custom" id="btn" onClick="reset()"><i class="fa fa-refresh"></i>
+      <button type="button" class="btn btn-custom" id="btn" onClick="timer.reset()"><i class="fa fa-refresh"></i>
       Reset</button>
       <section class = "message-section">
             <p id="message"></p>
